@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+     color: #333;
+   }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+ .nav-buttons .btn {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+
+ .nav-buttons .btn i {
+    font-size: 15px;
+ }
+
+.nav-buttons .btn:hover {
+    background-color: #333;
+    color: #fff;
+ }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+    header h1 {
+      font-size: 38px;
+      color: #333;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    section p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .products {
+      margin-top: 50px;
+    }
+    .products h2 {
+      font-size: 32px;
+      color: #333;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Four images in one row */
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .product {
+      width: 200px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 20px;
+      color: #777;
+    }
+    footer span {
+      color: red;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .product-list {
+        grid-template-columns: repeat(2, 1fr); /* Two images per row on tablets */
+      }
+    }
+    @media (max-width: 480px) {
+      .product-list {
+        grid-template-columns: 1fr; /* One image per row on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ecommerce</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn login"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="btn register"><i class="fas fa-user-plus"></i> Register</button>
+                <button class="btn cart"><i class="fas fa-shopping-cart"></i> Cart</button>
+            </div>
+        </nav>
+    </header>
+  <header>
+    <h1>About Us</h1>
+  </header>
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere doloremque
+      veritatis odit similique sequi. Odit amet fuga nam quam quasi facilis sed doloremque saepe sint perspiciatis explicabo totam vevo quas
+      provident ipsam,veritatis nostrum velit quos recusandae est mollitia esse fugit dolore laudantium.ex vel
+      explicabo earum unde eligendi autem praesentium,doloremque distinctio nesciuent porro tempore quis eaque
+      labore voluptatibus ea necessitatibus exercitationem tempora molestiad.ad consequuuntur veniam sequi ullam
+      tempore vel tenetur soluta dolore sunt maxime aliquam corporis est, quo saepe dolorem optio minus sint nemo
+      totam dolorum! reprehenderit delectus expedita a alias nam recusandae illo debitis repellat libero,quasi
+      explicabo molestiae saepe,doloremtempore itaque eveniet quam dignissimos blanditiis excepturi harum numquam 
+      vel nihil? ipsum
+    </p>
+  </section>
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="../images/pexels-photo-298863.jpeg" alt="Men's Clothing">
+        <h3>Men's Clothing</h3>
+      </div>
+      <div class="product">
+        <img src="../images/pexels-photo-7679720.jpeg" alt="Women's Clothing">
+        <h3>Women's Clothing</h3>
+      </div>
+      <div class="product">
+        <img src="../images/pexels-photo-1927259.webp" alt="Jewelry">
+        <h3>Jewelry</h3>
+      </div>
+      <div class="product">
+        <img src="../images/pexels-photo-356056.jpeg" alt="Electronics">
+        <h3>Electronics</h3>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Made with <span>❤️</span> by AchieversIT
+  </footer>
+</body>
+</html>
